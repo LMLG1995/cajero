@@ -1,0 +1,64 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Bienvenido <span id="userName"></span></h1>
+
+        <div class="main">
+            <div class="menu" id="saldo">
+                <button onclick="consultarSaldo()">
+                
+                    <span>
+                        Consultar saldo
+                    </span>
+                </button>
+            </div>
+
+
+            <div class="menu">
+                <button onclick="mostrarDepositar()">
+                    <span>
+                        Depositar
+                    </span>
+                </button>
+            </div>
+
+
+            <div class="menu">
+                <button onclick="mostrarRetirar()">
+                    <span>
+                        Retirar
+                    </span>
+                </button>
+            </div>
+         </div>
+
+
+         <div class="nav">
+            <button onclick="salir()" class="salir">
+                
+                <span>
+                    Salir
+                </span>
+            </button>            
+         </div>
+    </div>
+    
+    
+    <script src="js/home.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

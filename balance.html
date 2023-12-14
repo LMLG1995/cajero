@@ -1,0 +1,39 @@
+<!-- balance.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Saldo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Su saldo es: <span id="saldo"></span></h1>
+        <div class="nav">
+            <button onclick="home()" class="home">
+                
+                <span>
+                    Menú
+                </span>
+            </button>            
+         </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtener el saldo del Local Storage
+            const saldo = localStorage.getItem('saldo');
+
+            // Mostrar el saldo en el elemento correspondiente
+            document.getElementById("saldo").textContent = `$${saldo}`;
+        });
+    </script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

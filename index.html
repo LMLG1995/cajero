@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Cajero</title>
+</head>
+<body>
+   
+<div class="container">
+    <h1>Cajero automático</h1>
+    <h2>Elija la cuenta que desea usar</h2>
+    <form method="post" action="#" id="myForm">
+        <select id="cuentaSelector">
+            <option disabled selected>-Elige una opción-</option>
+        </select>
+
+        <div id="nipSection" style="display: none;">
+            <label for="nipInput"></label>
+            <input type="password" id="nipInput" placeholder="Ingrese su NIP">
+            <button type="button">Ingresar</button>
+
+            <div id="mensajeIncorrecto" style="display: none;">
+                <span>PIN incorrecto</span>
+            </div>
+
+            <div id="nipRequired" style="display: none;">
+                <span>El PIN es requerido</span>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>
